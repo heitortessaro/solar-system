@@ -6,11 +6,15 @@ class MissionCard extends Component {
     const { name, year, country, destination } = this.props;
 
     return (
-      <div data-testid="mission-card">
-        <p data-testid="mission-name">{name}</p>
-        <p data-testid="mission-year">{year}</p>
-        <p data-testid="mission-country">{country}</p>
-        <p data-testid="mission-destination">{destination}</p>
+      <div data-testid="mission-card" className="mission-card">
+        <div className="div-sup">
+          <span data-testid="mission-name">{name}</span>
+        </div>
+        <div className="div-inf">
+          <p data-testid="mission-year">{year}</p>
+          <p data-testid="mission-country">{country}</p>
+          <p data-testid="mission-destination">{destination}</p>
+        </div>
       </div>
     );
   }

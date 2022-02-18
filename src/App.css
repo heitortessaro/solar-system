@@ -24,6 +24,61 @@ h1 {
 h2 {
   border: 1px solid white;
   border-radius: 1rem;
+  box-shadow: 0 0 10px white;
   font-size: 3em;
-  margin: 0 10% 20px;
+  margin: 40px 10%;
 }
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 85%;
+}
+
+.planet-card {
+  font-size: 1.5rem;
+  opacity: 0.6;
+  padding: 20px;
+}
+
+.planet-card:hover {
+  opacity: 1;
+}
+
+.planet-card img {
+  max-width: 250px;
+}
+
+.mission-card {
+  font-size: 1.2rem;
+  text-align: left;
+  width: 28%;
+}
+
+.mission-card:hover {
+  background-color: rgba(256, 256, 256, 0.1);
+  border-radius: 10px;
+}
+
+.div-sup, .div-inf {
+  border: 1px white solid;
+  padding: 15px;
+}
+
+.div-sup {
+  border-radius: 10px 10px 0 0;
+}
+
+.div-inf {
+  border-radius: 0 0 10px 10px;
+}
+
+.mission-card span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
