@@ -8,7 +8,12 @@ class SolarSystem extends Component {
     return (
       <section data-testid="solar-system">
         <Title headline="Planetas" />
-        <PlanetCard planetName={ planets[0].name } planetImage={ planets[0].image } />
+        {planets.map((planeta) => (
+          <PlanetCard
+            key={ planeta.name }
+            planetName={ planeta.name }
+            planetImage={ planeta.image }
+          />))}
       </section>
     );
   }
